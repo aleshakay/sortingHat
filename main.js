@@ -21,3 +21,10 @@ const printToDom = (divId, stringToPrint) => {
 }
 printToDom('studentForm', domString)
 ) */
+
+document.getElementById('sortHatsButton').addEventListener('click',(e) =>{
+const style = document.getElementById('studentForm').style;
+style.display = (style.display == 'none') ? 'block' : 'none';
+}, true);
+
+
