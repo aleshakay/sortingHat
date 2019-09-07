@@ -14,15 +14,21 @@
         <p class="lead">The Sorting Hat has been dividing and sorting students into Hogwart houses for a millinum and continues to this day.  Click on the below button for the Sorting Hat's magical matches.</p>
         <hr class="my-4">
         <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a id="sortHatsButton" class="btn btn-primary btn-lg" href="#" role="button">Sort Here</a>
+        <a id="sortHatsButton" class="btn btn-primary btn-lg" href="#" role="button">Sorting Hat</a>
     </div>
     <div id='studentForm'>
         <form>
             <div class="form-group">
-            <label for="exampleInputEmail1">Student's Name:</label>
-            <div class="studentsName"><input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name Here"></div>
+                <label for="exampleInputEmail1">
+                    Student's Name:
+                </label>
+                <div id="newStudentInput" class="studentsName">
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name Here">
+                </div>
             </div>
-            <button type="submit" class="btn btn-primary">Happy Sorting</button>
+            <button id="sumbitStdName" type="submit" value = "submit" class="btn btn-primary">
+                Happy Sorting
+            </button>
         </form>
     </div> 
     <script src="./main.js"></script>

@@ -21,10 +21,16 @@ const printToDom = (divId, stringToPrint) => {
 }
 printToDom('studentForm', domString)
 ) */
+document.getElementById('studentForm').style.visibility="hidden"; //start with the form hidden
+document.getElementById('sortHatsButton').addEventListener('click',(e) =>{ //button click to bring down the student form
+document.getElementById('studentForm').style.visibility="visible"; //make the form visible 
 
-document.getElementById('sortHatsButton').addEventListener('click',(e) =>{
-const style = document.getElementById('studentForm').style;
-style.display = (style.display == 'none') ? 'block' : 'none';
-}, true);
+})
+let newStdName = [];
 
+document.getElementById('sumbitStdName').addEventListener('click',(e) =>{
+    let boxvalue = document.getElementById('exampleInputEmail1').value;
+    newStdName.push(boxvalue);  
+}
+)
 
