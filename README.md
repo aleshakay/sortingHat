@@ -8,6 +8,7 @@
 * Github
 
 # Screenshots
+![Main View](https://github.com/aleshakay/sortingHat/blob/master/screenshots/Screen%20Shot%202019-10-27%20at%2020.44.44.png)
 
 # How to run
 * Clone the project from project from ```https://github.com/aleshakay/sortingHat```.
