@@ -35,11 +35,12 @@ const studentHouseCards = (houses) => {
     <div class="card">
         <div class="card-body">
             <h3 class="card-title">${Studentvalue}</h3>
-            <h3 class="card-subtitle mb-2 text-muted">${arrHouse}!</h3>
-            <button id="exit" class="card-link exit">Expel</button>
+            <h1 class="card-subtitle mb-2 text-muted">${arrHouse}</h1>
+            <button id="exitBtn" class="card-link exit">Expel</button>
         </div>
     </div>`
     printToDom('studentCards', domString);
+    deletecard();
     exampleInputEmail1.value='';
 }
 document.body.addEventListener('click',(e) =>{ //button click to bring down the student form
@@ -52,13 +53,13 @@ document.body.addEventListener('click',(e) =>{ //button click to bring down the 
    })
 
 const deletecard = () => {
-const removeHogwart = document.getElementsByClassName('exit');
-for(let i = 0; i < removeHogwart.length; i++) {
-    const expelledStu = removeHogwart[i];
-    expelledStu.addEventListener('click', (e) =>{
-        const expelatHogwarts = e.target;
-        const removeHogwart = expelatHogwarts.parentNode.parentNode;
-        removeHogwart.remove();
-    })
-}
+    const removeHogwart = document.getElementsByClassName('exit');
+        for(let i = 0; i < removeHogwart.length; i++) {
+            const expelledStu = removeHogwart[i];
+            expelledStu.addEventListener('click', (e) =>{
+                const expelatHogwarts = e.target;
+                const removeHogwartCard = expelatHogwarts.parentNode.parentNode;
+                removeHogwartCard.remove();
+        })
+    }
 };
